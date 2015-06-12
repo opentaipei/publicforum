@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>北市府網路市政論壇</title>
+
+  <!-- for Google -->
+  <meta name="description" content="BOT的五大迷思、修正的草案。好的政策並非一錘定音，而是是一修再修，我們也歡迎大家不吝給我們建議，讓我們持續向更好的台北邁進。" />
+  <meta name="keywords" content="北市府網路市政論壇" />
+
+  <meta name="author" content="開放台北" />
+
+  <!-- for Facebook -->          
+  <meta property="og:title" content="北市府網路市政論壇" />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="http://opentaipei.github.io/publicforum/asset/101skyline.jpg" />
+  <meta property="og:url" content="http://opentaipei.github.io/publicforum/" />
+  <meta property="og:description" content="BOT的五大迷思、修正的草案。好的政策並非一錘定音，而是是一修再修，我們也歡迎大家不吝給我們建議，讓我們持續向更好的台北邁進。" />
+
+  <!-- for Twitter -->          
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="北市府網路市政論壇" />
+  <meta name="twitter:description" content="BOT的五大迷思、修正的草案。好的政策並非一錘定音，而是是一修再修，我們也歡迎大家不吝給我們建議，讓我們持續向更好的台北邁進。" />
+  <meta name="twitter:image" content="http://opentaipei.github.io/publicforum/asset/101skyline.jpg" />
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="https://spreadsheets.google.com/feeds/list/19Py9ridQMPjiahvqS406zhTPWC94exW8SrSkFapF91o/1/public/values?alt=json-in-script&amp;callback=onSpreadsheet" defer></script>
+  <style>
+    body {
+      font-family: "微軟正黑體","Helvetica Neue",Helvetica,Arial,sans-serif;
+      padding-bottom: 50px;
+    }
+
+    #tabContent p,
+    #tabContent ol li,
+    #tabContent ul li {
+      font-size: 1.5em;
+      line-height: 2em;
+    }
+
+    #tabContent ul li,
+    #tabContent ol li {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      margin-left: 30px;
+    }
+
+    h5 {
+      margin-left: 50px;
+      font-size: 1.2em;
+      line-height: 1.2em;
+    }
+
+    h6 {
+      text-align: center;
+      font-size: 1.5em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="fb-root"></div>
+  <script>
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v2.3";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <div class="jumbotron">
+    <div class="container">
+      <div class="col-md-8">
+        <h1>網路市政論壇<br>
+          <small>面對問題是解決問題的第一步</small>
+        </h1>
+      </div>
+      <div class="col-md-4">
+        <!-- Page plugin's width will be 290px -->
+        <div class="fb-page" data-href="https://www.facebook.com/pages/%E9%96%8B%E6%94%BE%E5%8F%B0%E5%8C%97-%E5%8C%97%E5%B8%82%E5%BA%9C%E7%B6%B2%E8%B7%AF%E5%B8%82%E6%94%BF%E8%AB%96%E5%A3%87/1415211765449004" data-hide-cover="false" data-show-facepile="false" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/%E9%96%8B%E6%94%BE%E5%8F%B0%E5%8C%97-%E5%8C%97%E5%B8%82%E5%BA%9C%E7%B6%B2%E8%B7%AF%E5%B8%82%E6%94%BF%E8%AB%96%E5%A3%87/1415211765449004"><a href="https://www.facebook.com/pages/%E9%96%8B%E6%94%BE%E5%8F%B0%E5%8C%97-%E5%8C%97%E5%B8%82%E5%BA%9C%E7%B6%B2%E8%B7%AF%E5%B8%82%E6%94%BF%E8%AB%96%E5%A3%87/1415211765449004">開放台北 - 北市府網路市政論壇</a></blockquote></div></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-3">
+        <ul id="tabs" class="nav nav-pills nav-stacked" style="font-size:1.5em">
+        </ul>
+      </div>
+
+      <div class="col-md-9">
+        <div id="tabContent">
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
